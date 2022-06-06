@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang = en xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset = utf-8>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel = "stylesheet"
+          integrity = "sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin = "anonymous">
+    <!--CSS-->
+    <link href = "https://fonts.googleapis.com/css?family=Roboto"
+          rel = "preload" as = "font"/>
+    <link th:href = "@{img/cloud-run-32-color.png}" rel = "icon"
+          type = "image/png"/>
+    <link th:href = "@{css/style.css}" rel = "stylesheet" type = "text/css"/>
+    <title>Justin Hoang | Software Engineer | Student</title>
+</head>
+
+<body>
+<div class = "container">
+    <div class = "hero">
+        <div style = "text-align:center;">
+            <picture>
+                <source th:srcset = "@{img/celebration-dark.svg}"
+                        media = "(prefers-color-scheme: dark)">
+                <img th:src = "@{img/celebration.svg}"
+                     alt = "A group celebrating" width = "427" height = "231">
+            </picture>
+        </div>
+        
+        <div class = "message">
+            <h1>It's running!</h1>
+            <h2>Congratulations, you successfully deployed a container image to
+                Cloud Run</h2>
+        </div>
+    </div>
+
+</div>
+<!--Bootstrap Bundle with Popper -->
+<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity = "sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin = "anonymous"></script>
+</body>
+</html>
